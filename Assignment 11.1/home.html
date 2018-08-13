@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML DOM Assignment 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // created function with required properties
+        function display() {
+            var p1 = document.getElementById("para1");
+            p1.style.color = "purple";                     //changed color of paragraph 1 to purple
+            var p2 = document.getElementById("para2");
+            p2.style.color = "red";                        //changed color of paragraph 2 to red 
+            
+            // added a grey background color 
+            document.bgColor = "#A7AFB4";
+        }
+    </script>
+</head>
+    
+    <!-- onload event to display paragraph according to function -->
+    <body onload="display()">
+        <p id="para1">“The Document Object Model (DOM) is a
+                programming interface for HTML and XML documents. It represents the page so that
+                programs can change the document structure, style, and content. The DOM represents
+                the document as nodes and objects.<br>That way, programming languages can connect to
+                the page.”</p>
+        <p id = "para2">A Web page is a document. This document
+                can be either displayed in the browser window or as the HTML source. But it is the same
+                document in both cases. The Document Object Model (DOM) represents that same
+                document so it can be manipulated.<br> The DOM is an object-oriented representation of
+                the web page, which can be modified with a scripting language such as JavaScript.</p>
+    </body>
+</html>
